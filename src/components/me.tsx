@@ -1,4 +1,5 @@
-import "../styles/me.css";
+import "../style/style.css";
+
 function  Me(){
     return (
         <div className="comp" ></div>

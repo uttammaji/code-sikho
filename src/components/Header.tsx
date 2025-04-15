@@ -1,27 +1,30 @@
-import React from "react";
-import "../styles/styles.css";
+// import React from "react";
+import "../style/style.css";
 
 function Header() {
+    const handleLoginClick = () => {
+        const modal = document.getElementById('id01');
+        if (modal) {
+            modal.style.display = 'block';
+        }
+    };
+
     return (
         <header>
-    <a href="index.html" class="logo">
-        <img src="logo1.png" alt="Code Sikho" width="200px" class="logo12" />
-    </a>
-    <nav class="hod">
-        <ul>
-            <li><button class="contact-us-btn">About Us</button></li>
-            {/* <li> <button id="modeToggle" class="toggle-button">
-                <span class="icon sun">&#9728;</span>
-                <span class="icon moon">&#9790;</span>
-            </button></li> */}
-            <li>
-                <button class="loginbutton1" onclick="document.getElementById('id01').style.display='block'">
-                    Login
-                </button>
-            </li>
-        </ul>
-    </nav>
-</header>
+            <a href="index.html" className="logo">
+                <img src="logo1.png" alt="Code Sikho Logo" width="200px" className="logo12" />
+            </a>
+            <nav className="hod">
+                <ul>
+                    <li><button className="contact-us-btn">About Us</button></li>
+                    <li>
+                        <button className="loginbutton1" onClick={handleLoginClick}>
+                            Login
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </header>
     );
 }
 

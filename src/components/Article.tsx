@@ -1,4 +1,4 @@
-import "../styles/textboxcss.css";
+import "../style/textboxcss.css";
 
 const Article = () => {
   return (
