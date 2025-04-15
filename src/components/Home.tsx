@@ -22,8 +22,8 @@ const Navigation = () => {
 
 const HeaderContent = () => {
   return (
-    <div className="first1">
-      <div className="daco">
+    <div className="mainContent ">
+      <div className="backGroundEffect">
         <img src="/io.svg" alt="Logo" />
       </div>
 
@@ -33,7 +33,7 @@ const HeaderContent = () => {
           <h1 className="hellow white">सीखेगा</h1>
           <h1 className="hellow green">Bharat</h1>
         </div>
-        <div className="c1">
+        <div className="greeting">
           <p>Hello 👋 Programmer</p>
           <div className="animation1">
             <div className="first">

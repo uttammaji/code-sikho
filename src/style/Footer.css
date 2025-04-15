@@ -1,0 +1,29 @@
+
+/* Footer */
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100px;
+    background: #0b1d29;
+    color: white;
+    text-align: center;
+  }
+  .bold{
+    color: rgba(227, 229, 230, 0.6);
+  }
+  
+  /* Scrollbar */
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 10px;
+  }

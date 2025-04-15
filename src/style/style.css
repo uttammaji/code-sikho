@@ -16,89 +16,10 @@ body {
   font-family: "Poppins", sans-serif;
 } */
 
-/* Header */
-header {
-  background: rgba(37, 63, 81, 0.07);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 1%;
-}
 
-nav.hod ul li {
-  display: inline;
-  padding: 0 15px;
-}
-
-/* Buttons */
-.loginbutton1, .contact-us-btn {
-  transition: all 0.3s ease;
-  padding: 10px 20px;
-  font-weight: bold;
-  border-radius: 20px;
-  cursor: pointer;
-  border: 2px solid transparent;
-}
-
-.loginbutton1 {
-  background: linear-gradient(to right, #06151f, #183a53);
-  color: white;
-  border-radius: 63% 37% / 0% 100%;
-}
-
-.loginbutton1:hover {
-  opacity: 0.8;
-}
-
-.contact-us-btn {
-  background-color:transparent; 
-  
-}
-
-/* Sticky Navigation Bar */
-.stecky {
-  position: sticky;
-  top: 0;
-  z-index: 1;
-  background-color: #333;
-}
-
-.menu {
-  background: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 6px 20px;
-  box-shadow: 0 4px 10px rgba(32, 32, 32, 0.19);
-  font-weight: bold;
-}
-
-.navi div {
-  display: inline-block;
-}
-
-.navi div a {
-  color: #0b1d29;
-  padding: 5px 10px;
-  margin: 0 5px;
-  border-radius: 4%;
-}
-
-.navi div a:hover {
-  transition: 0.3s ease;
-  color: orange;
-}
-
-.search {
-  border: 1px solid #a6a5a5;
-  width: 250px;
-  padding: 10px;
-  font-size: 16px;
-  border-radius: 8px;
-}
 
 /* Content Header */
-.first1 {
+.mainContent  {
   display: flex;
   flex-direction: row;
   height: 400px;
@@ -126,7 +47,7 @@ nav.hod ul li {
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
 }
 
-.daco img {
+.backGroundEffect img {
   width: 180px;
 }
 
@@ -135,7 +56,7 @@ nav.hod ul li {
 .green { color: #138808; }
 
 /* Animation styles */
-.c1 {
+.greeting {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -170,36 +91,4 @@ nav.hod ul li {
   20%, 30% { margin-top: -4.62rem; }
   40%, 60% { margin-top: -10.24rem; }
   70%, 80% { margin-top: -4.62rem; }
-}
-
-/* Footer */
-.footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  height: 100px;
-  background: #0b1d29;
-  color: white;
-  text-align: center;
-}
-.bold{
-  color: rgba(227, 229, 230, 0.6);
-}
-
-/* Scrollbar */
-::-webkit-scrollbar {
-  width: 5px;
-}
-
-::-webkit-scrollbar-track {
-  border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-  background: transparent;
-  border-radius: 10px;
-}
-.comp{
-  height: 500px;
 }
