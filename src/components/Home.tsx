@@ -6,12 +6,13 @@ const Navigation = () => {
       <div className="menu">
         <a href="index.html"><img src="home_icon.png" alt="HOME" width="25px" /></a>
         <div id="mySidenav" className="navi">
-          <div><a href="#">All Tutorials</a></div>
-          <div><a href="#">Videos</a></div>
-          <div><a href="#">Notes</a></div>
-          <div><a href="#">Practice Problems</a></div>
-          <div><a href="#">Books</a></div>
-          <div><a href="#">University Space</a></div>
+          <div><a href="#">Tutorials</a></div>
+          <div><a href="#">Roadmaps</a></div>
+          {/* <div><a href="#">Videos</a></div>
+          <div><a href="#">Notes</a></div> */}
+          <div><a href="#">Practice </a></div> {/*1) Test 2)problem set   */}
+          
+          <div><a href="#">Community</a></div>
         </div>
         <input className="search" type="text" name="search" placeholder="Search... " />
       </div>
