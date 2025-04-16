@@ -1,29 +1,40 @@
+/* CSS Variables */
+:root {
+  --footer-bg: #0b1d29;
+  --footer-text-color: white;
+  --footer-bold-color: rgba(227, 229, 230, 0.6);
+  --scrollbar-width: 5px;
+  --scrollbar-track-radius: 10px;
+  --scrollbar-thumb-bg: transparent;
+  --scrollbar-thumb-radius: 10px;
+}
 
 /* Footer */
 .footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 100px;
-    background: #0b1d29;
-    color: white;
-    text-align: center;
-  }
-  .bold{
-    color: rgba(227, 229, 230, 0.6);
-  }
-  
-  /* Scrollbar */
-  ::-webkit-scrollbar {
-    width: 5px;
-  }
-  
-  ::-webkit-scrollbar-track {
-    border-radius: 10px;
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    background: transparent;
-    border-radius: 10px;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100px;
+  background: var(--footer-bg);
+  color: var(--footer-text-color);
+  text-align: center;
+}
+
+.bold {
+  color: var(--footer-bold-color);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: var(--scrollbar-width);
+}
+
+::-webkit-scrollbar-track {
+  border-radius: var(--scrollbar-track-radius);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb-bg);
+  border-radius: var(--scrollbar-thumb-radius);
+}
