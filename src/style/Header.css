@@ -10,6 +10,9 @@
   --button-bg-gradient: linear-gradient(to right, #06151f, #183a53);
   --button-hover-opacity: 0.8;
   --button-text-color: white;
+  --button-padding: 10px 20px;
+  --button-border-radius: 20px;
+  --transition: all 0.3s ease;
 }
 
 /* Header */
@@ -26,17 +29,19 @@ nav.hod ul li {
   padding: 0 15px;
 }
 
-/* Buttons */
+/* Buttons (Shared Styles) */
+button,
 .loginbutton1,
 .contact-us-btn {
-  transition: all 0.3s ease;
-  padding: 10px 20px;
+  transition: var(--transition);
+  padding: var(--button-padding);
   font-weight: bold;
-  border-radius: 20px;
+  border-radius: var(--button-border-radius);
   cursor: pointer;
   border: 2px solid transparent;
 }
 
+/* Login Button */
 .loginbutton1 {
   background: var(--button-bg-gradient);
   color: var(--button-text-color);
@@ -47,48 +52,12 @@ nav.hod ul li {
   opacity: var(--button-hover-opacity);
 }
 
+/* Contact Us Button */
 .contact-us-btn {
   background-color: transparent;
 }
 
-/* Sticky Navigation Bar */
-.stecky {
-  position: sticky;
-  top: 0;
-  z-index: 1;
-  background-color: var(--nav-bg);
-}
 
-.menu {
-  background: var(--menu-bg);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 6px 20px;
-  box-shadow: 0 4px 10px var(--menu-shadow);
-  font-weight: bold;
-}
 
-.navi div {
-  display: inline-block;
-}
 
-.navi div a {
-  color: var(--text-color);
-  padding: 5px 10px;
-  margin: 0 5px;
-  border-radius: 4%;
-}
 
-.navi div a:hover {
-  transition: 0.3s ease;
-  color: var(--hover-color);
-}
-
-.search {
-  border: 1px solid var(--search-border);
-  width: 250px;
-  padding: 10px;
-  font-size: 16px;
-  border-radius: 8px;
-}

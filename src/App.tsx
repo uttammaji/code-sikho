@@ -5,19 +5,21 @@
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
-import Article from "./components/Article";
+import ProblemCard from "./components/ProblemCard";
 import Me from "./components/me";
 function App() {
   // const [count, setCount] = useState(0)
 
   return (
-  <>
+
+   <div className="home-container">
                <Header />
                <Home />
-               <Article />
+               <ProblemCard />
                <Me />
                <Footer />
-               </>
+               </div>
+             
   )
 }
 
