@@ -13,11 +13,13 @@
   --button-padding: 10px 20px;
   --button-border-radius: 20px;
   --transition: all 0.3s ease;
+  
 }
 
 /* Header */
 header {
-  background: var(--primary-bg);
+  /* background: var(--primary-bg); */
+  
   display: flex;
   justify-content: space-between;
   align-items: center;

@@ -1,8 +1,23 @@
-/* #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+#root {
+  background-image: repeating-linear-gradient(
+    45deg,
+    rgba(53, 69, 220, 0.03) 0px,
+    rgba(53, 69, 220, 0.03) 1px,
+    transparent 2px,
+    transparent 20px
+  ),
+  repeating-linear-gradient(
+    -45deg,
+    rgba(53, 69, 220, 0.03) 0px,
+    rgba(53, 69, 220, 0.03) 1px,
+    transparent 2px,
+    transparent 20px
+  ),
+  linear-gradient(
+    90deg,
+    rgba(53, 69, 220, 0.05) 0%,
+    rgba(53, 69, 220, 0.05) 100%
+  );
 }
 /*
 .logo {

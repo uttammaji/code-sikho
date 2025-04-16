@@ -1,4 +1,25 @@
 .comp{
-    height: 500px;
+  
     background-color: rgba(152, 176, 208, 0.864);
+    .comp {
+      width: 100%;
+      max-width: 100%;
+      overflow-x: hidden;
+      padding: 1rem;
+      box-sizing: border-box;
+    }
+    
   }
+  /* .comp {
+  background-color: rgba(152, 176, 208, 0.864);
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  padding: 3rem 1rem 1rem 1rem;
+  box-sizing: border-box;
+  position: relative;
+ 
+  clip-path: ellipse(100% 80% at 50% 100%);
+}
+
+ */
