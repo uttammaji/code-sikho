@@ -56,7 +56,7 @@ const ResourcesSection: React.FC = () => {
 
   return (
     <section className="resources-container">
-      <h2 className="section-title">Resources to Learn</h2>
+      <h1 className="section-title">Resources to Learn</h1>
       
       <div className="resources-grid">
         {resources.map((resource, index) => (

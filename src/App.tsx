@@ -7,7 +7,7 @@ import Footer from "./components/Footer";
 import Home from "./components/Home";
 import ProblemCard from "./components/ProblemCard";
 import Me from "./components/me";
-import ResourcesSection from './components/ResourcesSection';
+// import ResourcesSection from './components/ResourcesSection';
 function App() {
   // const [count, setCount] = useState(0)
 

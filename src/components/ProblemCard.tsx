@@ -2,11 +2,19 @@ import React, { useEffect, useState } from "react";
 import "../style/ProblemCard.css";
 
 const ProblemCard: React.FC = () => {
-  const [timeLeft, setTimeLeft] = useState<number>(10 * 60 * 60 + 22 * 60 + 41);
+  // Calculate time remaining until midnight (24-hour countdown)
+  const calculateTimeLeft = () => {
+    const now = new Date();
+    const midnight = new Date();
+    midnight.setHours(24, 0, 0, 0); // Set to next midnight
+    return Math.floor((midnight.getTime() - now.getTime()) / 1000); // in seconds
+  };
+
+  const [timeLeft, setTimeLeft] = useState<number>(calculateTimeLeft());
 
   useEffect(() => {
     const timer = setInterval(() => {
-      setTimeLeft((prevTime) => (prevTime > 0 ? prevTime - 1 : 0));
+      setTimeLeft(calculateTimeLeft());
     }, 1000);
     return () => clearInterval(timer);
   }, []);
