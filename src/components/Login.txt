@@ -1,0 +1,102 @@
+import React, { useState } from "react";
+import "./login.css";
+
+const AuthPage: React.FC = () => {
+  const [isLogin, setIsLogin] = useState(false);
+  const [otp, setOtp] = useState("");
+  const [generatedOtp, setGeneratedOtp] = useState("");q
+
+  const handleSwitch = () => {
+    setIsLogin((prev) => !prev);
+  };
+
+  const generateOTP = () => {
+    const newOtp = Math.floor(100000 + Math.random() * 900000).toString();
+    setGeneratedOtp(newOtp);
+    alert("Your OTP is: " + newOtp);
+  };
+
+  const handleSignupSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (otp === generatedOtp) {
+      alert("Registration Successful!");
+    } else {
+      alert("Invalid OTP. Please try again.");
+    }
+  };
+
+  return (
+    <div className="container">
+      {/* Signup Form */}
+      {!isLogin && (
+        <form className="regiType" id="signup-form" onSubmit={handleSignupSubmit}>
+          <h2>Signup</h2>
+          <input type="text" placeholder="Full Name" required />
+          <input type="email" placeholder="Email or Phone" required />
+          <input type="password" placeholder="Password" required />
+
+          <div className="gender-select">
+            <label>
+              <input type="radio" name="gender" value="male" required /> Male
+            </label>
+            <label>
+              <input type="radio" name="gender" value="female" /> Female
+            </label>
+            <label>
+              <input type="radio" name="gender" value="other" /> Other
+            </label>
+          </div>
+
+          <select required>
+            <option value="">Select Country</option>
+            <option value="india">India</option>
+            <option value="usa">USA</option>
+            <option value="uk">UK</option>
+            <option value="canada">Canada</option>
+            <option value="australia">Australia</option>
+          </select>
+
+          <div className="otp-group">
+            <button className="otp-button" type="button" onClick={generateOTP}>
+              Get OTP
+            </button>
+            <input
+              type="text"
+              placeholder="Enter OTP"
+              id="otpInput"
+              value={otp}
+              onChange={(e) => setOtp(e.target.value)}
+              required
+            />
+          </div>
+
+          <button type="submit">Sign Up</button>
+          <p>
+            Already have an account?{" "}
+            <a href="#" onClick={handleSwitch}>
+              Login
+            </a>
+          </p>
+        </form>
+      )}
+
+      {/* Login Form */}
+      {isLogin && (
+        <div className="login1" id="login-form">
+          <h2>Login</h2>
+          <input type="email" placeholder="Email" required />
+          <input type="password" placeholder="Password" required />
+          <button>Login</button>
+          <p>
+            Don't have an account?{" "}
+            <a href="#" onClick={handleSwitch}>
+              Sign up
+            </a>
+          </p>
+        </div>
+      )}
+    </div>
+  );
+};
+
+export default AuthPage;
